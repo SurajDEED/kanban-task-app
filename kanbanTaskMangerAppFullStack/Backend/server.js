@@ -24,6 +24,7 @@ connect("mongodb://localhost:27017/taskapp")
 
 app.get('/', (req, res) => {
     console.log("I got request from front end")
+    res.status(200).send("Got get request !!")
 });
 
 
